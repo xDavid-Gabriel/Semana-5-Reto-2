@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  background-image: url(https://fondosmil.com/fondo/75572.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+}
+.titulo {
+  text-align: center;
+}
+.titulo h1 {
+  color: white;
+  margin-top: 30px;
+  font-size: 4vw;
+}
+.titulo p {
+  color: white;
+  margin-top: 10px;
+  font-size: 2vw;
+}
+.container__hamburguesa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60vh;
+}
+.container__hamburguesa > h3 {
+  color: rgb(255, 211, 13);
+  margin: 15px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+.button {
+  background: transparent;
+  border: 2px solid rgb(255, 211, 13);
+  padding: 8px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 800;
+  font-size: 15px;
+  position: relative;
+  top: -15px;
+  left: 15px;
+}
+.button:hover {
+  background: rgb(255, 211, 13);
+  color: rgb(22, 22, 22);
+  cursor: pointer;
+}
+span {
+  color: white;
+}
+img {
+  width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .container__hamburguesa {
+    height: 413px;
+  }
+  body {
+    background-position: left;
+  }
+  .button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 0 auto;
+  }
+  .titulo h1 {
+    font-size: 6vw;
+  }
+  .titulo p {
+    font-size: 3vw;
+  }
+}
+@media screen and (max-width: 320px) {
+  button {
+    top: 90%;
+  }
+  .titulo h1 {
+    font-size: 8vw;
+  }
+  .titulo p {
+    font-size: 5vw;
+  }
+}
+
+/*-------*/
+
+.swal-modal {
+  background: linear-gradient(rgb(255, 211, 13), rgb(255, 227, 103));
+}
+.swal-icon--success:before {
+  display: none;
+}
+.swal-icon--success:after {
+  display: none;
+}
+
+.swal-icon--success__hide-corners {
+  display: none;
+}
+.swal-icon--success__ring {
+  color: white !important;
+  border: white !important;
+}
+.swal-icon--success {
+  border-color: white;
+}
+.swal-icon--success__line {
+  background-color: white;
+}
+.swal-text {
+  color: black;
+}
+.swal-button--danger {
+  background-color: #de150c;
+}
+.swal-button {
+  background-color: #de150c;
+}
+
+.swal-button:not([disabled]):hover {
+  background-color: #ee372d;
+}
+.swal-footer {
+  text-align: center;
+}
+.swal-button--cancel {
+  background-color: white !important;
+}
